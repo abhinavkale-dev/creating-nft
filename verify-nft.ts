@@ -1,8 +1,8 @@
-import { createNft, fetchDigitalAsset, findMetadataPda, mplTokenMetadata, verifyCollection, findMasterEditionPda } from "@metaplex-foundation/mpl-token-metadata";
+import { findMetadataPda, mplTokenMetadata, verifyCollection, findMasterEditionPda } from "@metaplex-foundation/mpl-token-metadata";
 import { airdropIfRequired, getExplorerLink, getKeypairFromFile } from "@solana-developers/helpers";
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
 import {clusterApiUrl, Connection, LAMPORTS_PER_SOL} from "@solana/web3.js"
-import { generateSigner, keypairIdentity, percentAmount, publicKey } from "@metaplex-foundation/umi";
+import { keypairIdentity, publicKey } from "@metaplex-foundation/umi";
 
 const connection = new Connection(clusterApiUrl("devnet"));
 
